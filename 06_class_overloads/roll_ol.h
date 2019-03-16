@@ -1,3 +1,5 @@
+#ifndef ROLL_OL_H
+#define ROLL_OL_H
 //class interface
 #include "die.h"
 #include <string>
@@ -8,7 +10,7 @@ class Roll
 {
 public:
 	Roll();
-	Roll(Die dice1, Die dice2) :die1(dice1), die2(dice2) {
+	Roll(Die& dice1, Die& dice2) :die1(dice1), die2(dice2) {
 	}
 	void roll();
 	void roll(Die& die1, Die& die2);
@@ -25,3 +27,4 @@ private:
 	bool craps();
 	bool natural();
 };
+#endif

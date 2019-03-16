@@ -3,7 +3,7 @@
 
 //roll class implementation
 
-/*void Roll::roll()
+void Roll::roll()
 {
 	die1.roll();
 	die1_roll_value = die1.rolled_value();
@@ -68,12 +68,12 @@ bool Roll::natural()
 	}
 }
 
-//int value_1s()
-//{
-//	return Roll::die1_roll_value;
-//}
+int value_1s(Roll& d1)
+{
+	return d1.die1_roll_value;
+}
 
-//int value_2s()
-//{
-//	return Roll::die2_roll_value;
-//}*/
+int value_2s(Roll& d2)
+{
+	return d2.die2_roll_value;
+}

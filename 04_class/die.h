@@ -1,3 +1,5 @@
+#ifndef DIE_H
+#define DIE_H
 #include <random>
 #include <iostream>
 
@@ -22,3 +24,4 @@ private:
 	int roll_value;
 	int sides = 6;
 };
+#endif

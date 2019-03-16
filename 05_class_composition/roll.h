@@ -1,3 +1,5 @@
+#ifndef ROLL_H
+#define ROLL_H
 #include "die.h"
 #include <string>
 
@@ -6,7 +8,7 @@ using std::string;
 class Roll
 {
 public:
-	Roll(Die dice1, Die dice2) :die1(dice1), die2(dice2) {
+	Roll(Die& dice1, Die& dice2) :die1(dice1), die2(dice2) {
 	}
 	void roll();
 	string result();
@@ -22,3 +24,4 @@ private:
 	bool craps();
 	bool natural();
 };
+#endif
