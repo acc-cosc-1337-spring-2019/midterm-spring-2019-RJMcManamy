@@ -9,5 +9,7 @@ Create test cases in 08_class_copy_test.
 int main() 
 {
 	Die d1;
+	d1.roll();
+	Die d2 = d1; //Yeah still not really sure how im supposed to go about this one. Kind of annoyed this is the only one i couldn't figure out.
 	return 0;
 }
