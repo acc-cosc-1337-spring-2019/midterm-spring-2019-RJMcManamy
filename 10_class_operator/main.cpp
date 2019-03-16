@@ -11,16 +11,19 @@ Use overloaded cout on instance-outputs vector roll result
 */
 int main() 
 {
-	Craps games;
-	int players;
-	cout << "How many players? ";
-	cin >> players;
-
-	for (int pl = 0; pl < players; pl++)
+	int choice = 0;
+	do
 	{
+		Craps games;
+	
 		cin >> games;
 		games.play_game();
-	}
+		cout << games;
+
+		cout << "\n\n" << "Press 1 to continue: ";
+		cin >> choice;
+
+	} while (choice == 1);
 
 	return 0;
 }
